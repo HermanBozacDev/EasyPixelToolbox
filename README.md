@@ -1,42 +1,63 @@
-# 🎨 Aseprite Palette Exporter
+# 🧩 EasyPixel Toolbox
 
-Una herramienta de escritorio para Windows que extrae paletas de color desde imágenes `.png` y las exporta como archivos `.gpl` compatibles con Aseprite y GIMP.
+[➡️ Download latest version](https://github.com/HermanBozacDev/EasyPixelToolbox/releases/latest)
 
----
-
-
-## 🧰 ¿Qué hace?
-
-- Extrae los **32 colores** más comunes (o la cantidad que elijas) de una imagen PNG
-- Permite **ver, ordenar y filtrar** esos colores fácilmente
-- Podés **seleccionar solo los colores que querés exportar**
-- Vista previa de la imagen con **zoom y movimiento**
-- Exporta como archivo `.gpl` directamente listo para usar en **Aseprite**
-- Incluye **instalador clásico**: acceso directo, desinstalador, carpeta en Program Files, etc.
+![Screenshot 1](https://github.com/HermanBozacDev/EasyPixelToolbox/assets/1.PNG)
+![Screenshot 2](https://github.com/HermanBozacDev/EasyPixelToolbox/assets/8.PNG)
 
 ---
 
-## 🖼️ Vista previa
+## 🇬🇧 English
 
-![captura](./capturas/1.PNG)
-![captura](./capturas/2.PNG)
+**EasyPixel Toolbox** is a desktop tool for working with images in a pixel art workflow.
+
+It allows you to:
+- 🎨 Extract color palettes from PNG images
+- 🧩 Rebuild the image using a limited color palette
+- 🖼️ Convert JPG images to PNG
+- 🔍 Preview images with zoom and drag
+- 📁 Export to transparent `.png` or `.gpl` palette files
+
+### Use cases:
+- Great for reducing colors and outlining shapes from real images
+- Ideal for cleaning up AI-generated images into usable pixel bases
+- Fast palette extraction and post-processing for pixel art assets
+
+✅ 100% open source – built in Python with Tkinter
+
 ---
 
-## 📂 Instalación
+## 🇪🇸 Español
 
-1. Ejecutá el instalador `.exe` incluido
-2. Elige la carpeta de destino
-3. Iniciá el programa desde el acceso directo o desde la carpeta de instalación
+**EasyPixel Toolbox** es una herramienta de escritorio para trabajar con imágenes dentro de un flujo de trabajo pixel art.
+
+Permite:
+- 🎨 Extraer paletas de colores desde imágenes PNG
+- 🧩 Reconstruir la imagen usando una paleta limitada
+- 🖼️ Convertir imágenes JPG a PNG
+- 🔍 Previsualizar con zoom y desplazamiento
+- 📁 Exportar a `.png` con fondo transparente o `.gpl` (paleta para GIMP/Aseprite)
+
+### Casos de uso:
+- Excelente para reducir colores y delimitar siluetas desde imágenes reales
+- Ideal para transformar imágenes generadas por IA en base para pixel art
+- Rápida extracción de paletas y postproducción
+
+✅ 100% open source – hecho en Python con Tkinter
 
 ---
 
-## 🛠 Requisitos
-
-✅ Solo necesitas Windows 10/11 y ganas de crear pixel art.  
-El programa incluye todo lo necesario.
+## 🛠️ Technologies
+- Python 3.10+
+- Pillow (PIL)
+- Tkinter / ttkbootstrap
+- PyInstaller
 
 ---
 
-## 🧑‍💻 Autor
+## 📦 Download
+- [Download latest release](https://github.com/HermanBozacDev/EasyPixelToolbox/releases/latest) – Windows installer included
 
-Creado por **Martín Bozac** – [@HermanBozacDev](https://github.com/HermanBozacDev)
+## 🙋 Contact
+- GitHub: [HermanBozacDev](https://github.com/HermanBozacDev)
+- LinkedIn: [martinhermanbozac](https://www.linkedin.com/in/martinhermanbozac/)
