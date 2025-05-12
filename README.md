@@ -34,6 +34,13 @@ python main.py
 pyinstaller main.py --name EasyPixelToolbox --onefile --noconsole --add-data "assets;assets" --add-data "utils;utils" --add-data "ui;ui"
 ```
 
+4. (Optional) Use installer:
+If you use Inno Setup, the compiled `.exe` and installer script will generate an installer in the `/output` folder:
+```
+output/EasyPixelToolbox_Installer.exe
+```
+You can distribute this installer for easy user installation.
+
 ---
 
 ## 🇪🇸 Versión en Español
@@ -70,11 +77,17 @@ python main.py
 pyinstaller main.py --name EasyPixelToolbox --onefile --noconsole --add-data "assets;assets" --add-data "utils;utils" --add-data "ui;ui"
 ```
 
+4. (Opcional) Usá el instalador:
+Si usás Inno Setup, el `.exe` generado y el script del instalador crearán el instalador en la carpeta `/output`:
+```
+output/EasyPixelToolbox_Installer.exe
+```
+Podés distribuir este instalador fácilmente para usuarios finales.
+
 ---
 
 Enjoy creating beautiful retro art with precision! 🎮🧩
 
----
 
 ## 🖼️ Vista previa
 
