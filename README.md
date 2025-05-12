@@ -18,12 +18,12 @@ Una herramienta de escritorio para Windows que extrae paletas de color desde im�
 
 ## 🖼️ Vista previa
 
-![captura](./assets/1.png)
-![captura](./assets/3.png)
-![captura](./assets/7.png)
-![captura](./assets/5.png)
-![captura](./assets/8.png)
-![captura](./assets/9.png)
+![captura](./assets/1.PNG)
+![captura](./assets/3.PNG)
+![captura](./assets/7.PNG)
+![captura](./assets/5.PNG)
+![captura](./assets/8.PNG)
+![captura](./assets/9.PNG)
 
 ---
 
