@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
 from utils import config, image_utils
+from tkinter import filedialog
 
 def open_pixelator_window(parent, image_path, palette):
     if not image_path or not palette:
@@ -45,18 +46,32 @@ def open_pixelator_window(parent, image_path, palette):
         tkimg = ImageTk.PhotoImage(result.resize((config.CANVAS_PREVIEW_SIZE, config.CANVAS_PREVIEW_SIZE), Image.NEAREST))
         preview.config(image=tkimg); preview.image = tkimg; preview.result = result
 
+
     def exportar():
         if not hasattr(preview, 'result'):
             return
-        filename = n_entry.get().strip() or "exported"
+
         result = preview.result
+
+        filename = filedialog.asksaveasfilename(
+            title="Guardar imagen como...",
+            defaultextension=".png",
+            filetypes=[("PNG files", "*.png")],
+            initialfile=n_entry.get().strip() or "exported"
+        )
+
+        if not filename:
+            return
+
         rgba = result.convert("RGBA")
         datas = rgba.getdata()
-        new_data = [(0, 0, 0, 0) if px[:3] == (0,0,0) else (*px[:3], 255) for px in datas]
+        new_data = [(0, 0, 0, 0) if px[:3] == (0, 0, 0) else (*px[:3], 255) for px in datas]
         rgba.putdata(new_data)
-        rgba.save(f"{filename}.png")
-        messagebox.showinfo("Guardado", f"Imagen guardada como {filename}.png")
+        rgba.save(filename)
 
+        messagebox.showinfo("Guardado", f"Imagen guardada como:\n{filename}")
+
+        
     btns = tk.Frame(win, bg=config.UI_BACKGROUND_COLOR)
     btns.pack(pady=10)
     tk.Button(btns, text="Previsualizar", command=procesar, bg=config.BUTTON_BG_COLOR, fg=config.BUTTON_FG_COLOR).pack(side='left', padx=10)
