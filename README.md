@@ -2,9 +2,8 @@
 
 [➡️ Download latest version](https://github.com/HermanBozacDev/EasyPixelToolbox/releases/latest)
 
-![Screenshot 1](https://github.com/HermanBozacDev/EasyPixelToolbox/assets/1.PNG)
-![Screenshot 2](https://github.com/HermanBozacDev/EasyPixelToolbox/assets/8.PNG)
-
+![Screenshot 1](assets/1.PNG)
+![Screenshot 2](assets/8.PNG)
 ---
 
 ## 🇬🇧 English
@@ -57,6 +56,15 @@ Permite:
 
 ## 📦 Download
 - [Download latest release](https://github.com/HermanBozacDev/EasyPixelToolbox/releases/latest) – Windows installer included
+
+
+![Screenshot 1](assets/1.PNG)
+![Screenshot 2](assets/3.PNG)
+![Screenshot 1](assets/4.PNG)
+![Screenshot 2](assets/5.PNG)
+![Screenshot 1](assets/6.PNG)
+![Screenshot 2](assets/7.PNG)
+
 
 ## 🙋 Contact
 - GitHub: [HermanBozacDev](https://github.com/HermanBozacDev)
