@@ -62,9 +62,7 @@ Permite:
 ![Screenshot 2](assets/3.PNG)
 ![Screenshot 1](assets/4.PNG)
 ![Screenshot 2](assets/5.PNG)
-![Screenshot 1](assets/6.PNG)
-![Screenshot 2](assets/7.PNG)
-
+![Screenshot 2](assets/9.PNG)
 
 ## 🙋 Contact
 - GitHub: [HermanBozacDev](https://github.com/HermanBozacDev)
