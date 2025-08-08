@@ -76,3 +76,4 @@ def open_pixelator_window(parent, image_path, palette):
     btns.pack(pady=10)
     tk.Button(btns, text="Previsualizar", command=procesar, bg=config.BUTTON_BG_COLOR, fg=config.BUTTON_FG_COLOR).pack(side='left', padx=10)
     tk.Button(btns, text="Exportar como PNG", command=exportar, bg=config.BUTTON_BG_COLOR, fg=config.BUTTON_FG_COLOR).pack(side='left', padx=10)
+

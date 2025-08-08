@@ -57,6 +57,17 @@ Permite:
 ## 📦 Download
 - [Download latest release](https://github.com/HermanBozacDev/EasyPixelToolbox/releases/latest) – Windows installer included
 
+## 🐧 Build on Linux
+
+To create a standalone executable on Linux:
+
+```bash
+pip install -r requirements.txt
+./build_linux.sh
+```
+
+The binary will be generated inside the `dist` folder.
+
 
 ![Screenshot 1](assets/1.PNG)
 ![Screenshot 2](assets/3.PNG)

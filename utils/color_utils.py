@@ -26,3 +26,4 @@ def rgb_to_gpl_string(palette, name="exported_palette"):
 def save_gpl_file(palette, output_path, name="exported_palette"):
     with open(output_path, 'w') as f:
         f.write(rgb_to_gpl_string(palette, name))
+
