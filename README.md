@@ -62,7 +62,13 @@ Permite:
 To create a standalone executable on Linux:
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate
+
 pip install -r requirements.txt
+
+chmod +x build_linux.sh
+
 ./build_linux.sh
 ```
 
