@@ -53,7 +53,8 @@ def open_palette_extractor_window(root):
         if path:
             try:
                 num_colors = int(entry_colors.get())
-            except:
+            except ValueError:
+                messagebox.showerror("Entrada inválida", "La cantidad de colores debe ser un número entero")
                 num_colors = config.DEFAULT_NUM_COLORS
             current_image_path = path
             palette = color_utils.extract_palette(path, num_colors)

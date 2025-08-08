@@ -40,7 +40,9 @@ def open_pixelator_window(parent, image_path, palette):
     def procesar():
         try:
             w, h, b = int(w_entry.get()), int(h_entry.get()), int(b_entry.get())
-        except: return
+        except ValueError:
+            messagebox.showerror("Entrada inválida", "Ancho, alto y bloque deben ser números enteros")
+            return
         img = Image.open(image_path).convert("RGB").resize((w,h), Image.NEAREST)
         result = image_utils.approximate_image_to_palette(img, palette, b)
         tkimg = ImageTk.PhotoImage(result.resize((config.CANVAS_PREVIEW_SIZE, config.CANVAS_PREVIEW_SIZE), Image.NEAREST))
@@ -76,3 +78,4 @@ def open_pixelator_window(parent, image_path, palette):
     btns.pack(pady=10)
     tk.Button(btns, text="Previsualizar", command=procesar, bg=config.BUTTON_BG_COLOR, fg=config.BUTTON_FG_COLOR).pack(side='left', padx=10)
     tk.Button(btns, text="Exportar como PNG", command=exportar, bg=config.BUTTON_BG_COLOR, fg=config.BUTTON_FG_COLOR).pack(side='left', padx=10)
+
