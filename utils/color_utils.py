@@ -5,7 +5,8 @@ def quantize_color(r, g, b, step=10):
     return tuple(min(max(round(c / step) * step, 0), 255) for c in (r, g, b))
 
 def extract_palette(image_path, num_colors=32, step=10):
-    image = Image.open(image_path).convert('RGBA')
+    with Image.open(image_path) as img:
+        image = img.convert('RGBA')
     pixels = list(image.getdata())
     filtered_pixels = [
         quantize_color(r, g, b, step)
