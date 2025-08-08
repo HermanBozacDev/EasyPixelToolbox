@@ -1,5 +1,7 @@
 # ─── Configuración Global del Proyecto EasyPixel ───
 
+import os
+
 # Número de colores por defecto en la paleta
 DEFAULT_NUM_COLORS = 32
 
@@ -18,8 +20,8 @@ DEFAULT_PALETTE_NAME = "mi_paleta"
 CANVAS_PREVIEW_SIZE = 512
 
 # Archivos de íconos
-ICON_32 = "assets\icon32x32.png"
-ICON_128 = "assets\icon128x128.png"
+ICON_32 = os.path.join("assets", "icon32x32.png")
+ICON_128 = os.path.join("assets", "icon128x128.png")
 
 # ─── Estilo visual (Modo oscuro) ───
 
@@ -29,3 +31,4 @@ UI_FOREGROUND_COLOR = "#ffffff"  # texto
 BUTTON_BG_COLOR = "#2c2c2c"      # fondo de botones
 BUTTON_FG_COLOR = "#ffffff"      # texto de botones
 BUTTON_ACTIVE_BG = "#3c3c3c"     # hover/click
+
